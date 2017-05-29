@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neuronrobotics.bowlerbuilder.BowlerBuilder">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" fx:id="mainPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Open">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onOpenRobot" text="Robot" />
+                        <MenuItem mnemonicParsing="false" onAction="#onOpenCAD" text="CAD" />
+                        <MenuItem mnemonicParsing="false" onAction="#onOpenGist" text="Gist" />
+                        <MenuItem mnemonicParsing="false" onAction="#onOpenOther" text="Other" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Window">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onWindowShowTerminal" text="Show Terminal" />
+                        <MenuItem mnemonicParsing="false" onAction="#onWindowShowConnections" text="Show Connections" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onHelpAbout" text="About" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
